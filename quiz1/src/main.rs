@@ -12,6 +12,7 @@ fn main() {
 
 fn calculate_price_of_apples(quantity: u32) -> u32 {
     // An apple costs 2, unless 40 or more are purchased in 1 transaction, then 1 each
+    // I'm royally dumb, initially put a greater than when I needed a less than :(
     if quantity < 40 {
         quantity * 2
     } else {
